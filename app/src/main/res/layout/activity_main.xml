@@ -1,0 +1,40 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:id="@+id/mainActivityLayout">
+
+    <LinearLayout
+        android:id="@+id/lytMessages"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="1">
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal|bottom|top"
+        android:weightSum="1"
+        android:layout_weight="10">
+
+        <EditText
+            android:layout_width="309dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/editMessage"
+            android:text="hello" />
+
+        <ImageButton
+            android:layout_width="36dp"
+            android:layout_height="match_parent"
+            android:id="@+id/btnSend"
+            android:src="@drawable/send_button" />
+    </LinearLayout>
+
+</LinearLayout>
